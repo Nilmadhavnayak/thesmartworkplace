@@ -20,5 +20,6 @@ A=[mk('#e8b38d','#d6b894',lb('#2a1a14'),lf('#2a1a14'),V),mk('#e0ac86','#475569',
 mk('#d9a07a','#1e3a8a','','','<path d="M36 40c0-18 12-26 24-26s24 8 24 26z" fill="#1e3a8a"/><rect x="33" y="38" width="54" height="6" rx="3" fill="#172554"/><rect x="53" y="22" width="14" height="9" rx="2" fill="#fbbf24"/>'),
 mk('#cf9870','#a3e635','','','vest<path d="M36 42c0-20 10-28 24-28s24 8 24 28z" fill="#facc15"/><rect x="31" y="40" width="58" height="6" rx="3" fill="#eab308"/>')];
 document.querySelectorAll('.ph').forEach((e,i)=>e.innerHTML=A[i].replace('vest',''));
-const mn=document.getElementById('menu');document.getElementById('burger').onclick=()=>mn.classList.toggle('open');
-mn.querySelectorAll('a').forEach(a=>a.onclick=()=>mn.classList.remove('open'));
+const mn=document.getElementById('navmenu');document.getElementById('burger').onclick=()=>mn.classList.toggle('open');
+mn.querySelectorAll('.it').forEach(it=>{const a=it.querySelector(':scope>a');a.onclick=e=>{if(it.querySelector('.dd')&&innerWidth<=960){e.preventDefault();const o=it.classList.contains('exp');mn.querySelectorAll('.it').forEach(x=>x.classList.remove('exp'));if(!o)it.classList.add('exp')}else mn.classList.remove('open')}});
+mn.querySelectorAll('.pn a').forEach(a=>a.onclick=()=>mn.classList.remove('open'));
