@@ -226,3 +226,5 @@ nav .btn{white-space:nowrap}
 }
 
 html{overflow-x:hidden}.hero{overflow-x:clip}
+
+@media(max-width:960px){.links.open .it .dd{display:none}.links.open .it.exp .dd{display:block}.links.open .ch{display:block!important}.links.open .it.exp .ch{transform:rotate(180deg)}.links.open .it.exp>a{background:#eaf1ff;color:var(--blue)}}
