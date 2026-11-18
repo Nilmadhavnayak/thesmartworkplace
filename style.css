@@ -256,7 +256,7 @@ html{overflow-x:hidden}.hero{overflow-x:clip}
 
 /* hero v4 - high-res photo */
 .hero{min-height:600px}
-.hero-photo{width:min(60%,780px);background-size:cover;background-position:right 35%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%)}
+.hero-photo{width:min(48%,780px);background-size:cover;background-position:right 35%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%)}
 @media(max-width:960px){.hero{min-height:0}.hero-photo{width:100%;height:min(100vw,560px);background-position:center 30%;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 14%);mask-image:linear-gradient(180deg,transparent 0,#000 14%)}}
 @media(max-width:640px){.hero-photo{height:100vw;background-position:center top}}
 
